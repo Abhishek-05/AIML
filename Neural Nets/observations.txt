@@ -1,0 +1,35 @@
+XOR Data set :
+
+learning rate = 0.1
+hidden layer = 1
+nodes in hidden layer = 4
+epochs = 500 (for convergence with all seed values)
+
+SemiCircle Data set :
+
+learning rate = 0.1
+hidden layer = 1
+nodes in hidden layer = 4 (for convergence with all seed values increased the nodes by 1)
+epochs = 500 (for convergence with all seed values)
+
+Mnist Data set :
+
+learning rate = 0.2
+hidden layer = 1
+nodes in hidden layer = 25 (for convergence with all seed values increased the nodes by 5)
+epochs = 100 (for convergence with all seed values)
+
+CIFAR Data set :
+
+learning rate = 0.1
+layers :
+	1) Convolution layer with filter size 10x10 and output depth 3 with stride 2
+	2) FlattenLayer
+	3) Fully connected network with one hidden layer having 60 nodes
+nodes in hidden layer = 25 (for convergence with all seed values increased the nodes by 5)
+epochs = 13 (validation accracy started falling down / fluctuating after this)
+
+
+Before doing the assignment I thought that having a greating number of nodes is more handy but after seeing the reuslts
+it is evedent that when the number of nodes increases the data overfits the model causing low test accuracy. Validation
+accuracy helps us get away with this.
